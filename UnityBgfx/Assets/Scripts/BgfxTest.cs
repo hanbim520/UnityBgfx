@@ -42,26 +42,26 @@ public class BgfxTest : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
+    //// Update is called once per frame
+    //void Update()
+    //{
 
-        Bgfx.SetViewRect(0, 0, 0, width, height);
-        Bgfx.DebugTextClear();
-        Bgfx.DebugTextImage(
-            Mathf.Max(width / 2 / 8, 20) - 20,
-            Mathf.Max(height / 2 / 16, 6) - 6,
-            40, 12,
-           Logo.Bytes,
-            160
-        );
+    //    Bgfx.SetViewRect(0, 0, 0, width, height);
+    //    Bgfx.DebugTextClear();
+    //    Bgfx.DebugTextImage(
+    //        Mathf.Max(width / 2 / 8, 20) - 20,
+    //        Mathf.Max(height / 2 / 16, 6) - 6,
+    //        40, 12,
+    //       Logo.Bytes,
+    //        160
+    //    );
 
-        Bgfx.DebugTextWrite(0, 1, DebugColor.Blue, DebugColor.Blue, "SharpBgfx/Samples/00-HelloWorld");
+    //    Bgfx.DebugTextWrite(0, 1, DebugColor.Blue, DebugColor.Blue, "SharpBgfx/Samples/00-HelloWorld");
 
-        // advance to the next frame. Rendering thread will be kicked to
-        // process submitted rendering primitives.
-        Bgfx.Frame();
-    }
+    //    // advance to the next frame. Rendering thread will be kicked to
+    //    // process submitted rendering primitives.
+    //    Bgfx.Frame();
+    //}
 
     private void OnDestroy()
     {
